@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c2n8s16b3agur"]
+
+[ext_resource type="Script" uid="uid://xjclp2t2b5k4" path="res://scenes/main.gd" id="1_main"]
+[ext_resource type="PackedScene" path="res://scenes/board/board.tscn" id="2_board"]
+[ext_resource type="PackedScene" path="res://scenes/camera/game_camera.tscn" id="3_camera"]
+
+[node name="Main" type="Node2D" unique_id=748267420]
+script = ExtResource("1_main")
+
+[node name="Board" parent="." unique_id=1884261601 instance=ExtResource("2_board")]
+grid_columns = 10
+grid_rows = 10
+cell_size = 256
+
+[node name="GameCamera" parent="." unique_id=573968357 instance=ExtResource("3_camera")]
